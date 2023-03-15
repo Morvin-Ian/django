@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% include 'topnav.html' %}
+{% include 'middlenav.html' %}
+		
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+								</div>	
+	
+			<div class="col-sm-9">	
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form">
+						<h2 style="background-color: orange ; text-align: center; border-radius: 5px; padding: 10px;" ><a style="color: white; font-weight: 200; " href="{% url 'customer-login'%}">Login As Customer</a></h2>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form">
+							<h2 style="background-color: orange ;  text-align: center; border-radius: 5px; padding: 10px;" ><a style="color: white; font-weight: 200;" href="{% url 'farmer-login'%}">Login As Farmer</a></h2>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/form-->
+	
+		<br>
+
+	{% include 'footer.html' %}
+	
+{% endblock content %}

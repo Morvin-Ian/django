@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block body %}
+    <div class="header-bar">
+        <a href="{% url 'index' %}">&#8592; Home</a>
+    </div>
+    <div class="card-body-task">
+
+    <div id="task-detail">
+    <h2> Internal Error</h2>
+    <p>Our server returned an unexpected error.</p>
+    <p>We probably could not understand your request.</p>
+    <p>Please contact the administrator
+        <a href="#" target="_blank">ONIX</a></p>
+        <button onclick="History.back()">Back</button>
+    </div>
+    </div>
+{% endblock %}

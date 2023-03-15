@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header-middle"><!--header-middle-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="logo pull-left">
+                    <a href="{% url 'index' %}"><img style="object-fit: cover;" src="{% static 'images/home/logo1.jpg' %}" alt="" height="100px;" width="180px; " /></a>
+                </div>
+                
+            </div>
+            <div class="col-sm-8">
+                <div class="shop-menu pull-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                        {% if request.user.is_authenticated %}
+                            <li><a href="{% url 'index' %}"><i class="fa fa-user"></i> {{user.username}}</a></li>
+                            <li><a href="{% url 'logout' %}"><i class="fas fa-arrow-right"></i> Logout</a></li>								
+                        {% else %}
+                            <li><a href="{% url 'choose-registration' %}"><i class="fa fa-lock"></i> Registration</a></li>
+                            <li><a href="{% url 'choose-login' %}"><i class="fa fa-lock"></i> Login</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/header-middle-->
+{% endblock content %}

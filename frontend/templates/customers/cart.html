@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+		
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Category</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Fruits & Vegetables
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="">Kales </a></li>
+											<li><a href="">Spinach </a></li>
+											<li><a href="">Oranges </a></li>
+											<li><a href="">Mangoes</a></li>
+											<li><a href="">Cabbages </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Poultry</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Grains</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Beverages</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Meat</a></h4>
+								</div>
+							</div>
+						</div><!--/category-productsr-->
+
+	<section id="cart_items">
+		<div class="container">
+			<div class="col-sm-9">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Cart</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Price</td>
+							<td class="quantity">Quantity</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="{% static 'images/cart/three.png' %}" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	
+	</section> <!--/#cart_items-->
+
+	<section id="do_action">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					
+				</div>
+				<div class="col-sm-9">
+					<div class="total_area">
+						<ul>
+							<li>Cart Sub Total <span>$59</span></li>
+							<li>Eco Tax <span>$2</span></li>
+							<li>Shipping Cost <span>Free</span></li>
+							<li>Total <span>$61</span></li>
+						</ul>
+							<a class="btn btn-default update" href="">Update</a>
+							<a class="btn btn-default check_out" href="">Check Out</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/#do_action-->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer id="footer"><!--Footer-->
+
+		<div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-widget">
+                            <h2>Home</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Online Help</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Order Status</a></li>
+                                <li><a href="#">Change Location</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-widget">
+                            <h2>About Us</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Mens</a></li>
+                                <li><a href="#">Womens</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-widget">
+                            <h2>Contact Us</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privecy Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                                <li><a href="#">Billing System</a></li>
+                                <li><a href="#">Ticket System</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2023 @githuaruben</p>
+                    <p class="pull-right">All right <span>Resorved</span></p>
+                </div>
+            </div>
+        </div>
+		
+	</footer><!--/Footer-->
+{% endblock content %}

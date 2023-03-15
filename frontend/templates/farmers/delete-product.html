@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+{% include 'topnav.html' %}
+
+
+   
+    <form style="margin: 5%; padding: 10px;" id="delete" method="POST" >
+        {% csrf_token %}
+
+        <p>Are you Sure you want to Delete?</p>
+
+        <button style="background-color: red; color: white; padding: 5px; border: none; border-radius: 4px; margin-left: 3%;" type="submit" name="del" >Yes</button>
+        <a style="background-color: blue; color: white; padding: 7px; border: none; border-radius: 4px; margin-left: 5%;"  href="{{request.META.HTTP_REFERER}}" >No</a>
+    </form>    
+{% endblock content %}
