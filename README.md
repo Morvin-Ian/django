@@ -1,2 +1,2 @@
-# Django-UUID
-Extensive UUID Utilization (Django)
+# Django
+ Simple ecommerce site with django 
